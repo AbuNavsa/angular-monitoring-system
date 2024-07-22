@@ -1,13 +1,23 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MonitorComponent } from "./monitor/monitor.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  imports: [
+    RouterOutlet,
+    MonitorComponent,
+  ],
+    template: `
+  <main>
+    <section class="content">
+      <app-monitor></app-monitor>
+    </section>
+  </main>
+`,
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'system-monitoring-UI';
+  title = 'System Monitoring';
 }

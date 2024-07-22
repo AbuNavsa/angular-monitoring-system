@@ -1,27 +1,77 @@
-# SystemMonitoringUI
+Note: I have 3 years experience in JavaScript and 1 year in React and React Native.
+I've used express.js but never Angular. I chose to use Angular on purpose to demonstrate
+how I can pick things up in a short amount of time.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+This task I achieved everything except the auto refresh. If manually refreshed you will see the status update.
+With more time I would have solved this too. I hope this work shows my capability in a good light. Thank you
+for the opporttunity.
 
-## Development server
+# Angular UI Repository
+First setup the RestAPI repository and whilst that server is running, run this application
+Welcome to the Angular UI repository. This project is an Angular application that includes a monitoring component and is set up for end-to-end testing with Cypress.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+1. [Prerequisites](#prerequisites)
+2. [Setup Instructions](#setup-instructions)
+3. [Running the Application](#running-the-application)
+4. [Running Cypress Tests](#running-cypress-tests)
+5. [Troubleshooting](#troubleshooting)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
 
-## Build
+Ensure you have the following software installed:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Node.js](https://nodejs.org/) (version 14.x or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-## Running unit tests
+## Setup Instructions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Follow these steps to set up the Angular UI repository:
 
-## Running end-to-end tests
+1. **Clone the Repository**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   git clone https://github.com/your-username/your-angular-ui-repo.git
+   cd your-angular-ui-repo
 
-## Further help
+2. **Install Dependencies**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```bash
+   npm install
+
+3. **Run Application**
+   ```bash
+   ng serve
+
+## Testing Setup
+
+1. **Install Cypress**
+   ```bash
+   npm install cypress --save-dev
+
+
+2. **Install Cypress**
+   ```bash
+   npm install cypress --save-dev
+
+Cypress configuration is set up in cypress.config.js (or cypress.config.ts if using TypeScript). 
+By default, it uses http://localhost:4200 as the base URL. Ensure this matches the URL where your
+Angular app will be served.
+
+// cypress.config.js
+
+`  module.exports = {
+    e2e: {
+    baseUrl: 'http://localhost:4200',
+    supportFile: 'cypress/support/e2e.ts',
+    },
+  };`
+
+3. **Run Cypress in UI**
+  `npx cypress open
+  `
+
+4. **Run Cypress without UI from terminal**
+`   npx cypress run
+`
