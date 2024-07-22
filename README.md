@@ -10,14 +10,6 @@ for the opporttunity.
 First setup the RestAPI repository and whilst that server is running, run this application
 Welcome to the Angular UI repository. This project is an Angular application that includes a monitoring component and is set up for end-to-end testing with Cypress.
 
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Setup Instructions](#setup-instructions)
-3. [Running the Application](#running-the-application)
-4. [Running Cypress Tests](#running-cypress-tests)
-5. [Troubleshooting](#troubleshooting)
-
 ## Prerequisites
 
 Ensure you have the following software installed:
@@ -32,7 +24,7 @@ Follow these steps to set up the Angular UI repository:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/your-angular-ui-repo.git
+   git clone https://github.com/AbuNavsa/angular-monitoring-system.git
    cd your-angular-ui-repo
 
 2. **Install Dependencies**
